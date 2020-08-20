@@ -1,0 +1,89 @@
+html, body {
+  margin: 0px;
+  height: 100%;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
+}
+
+#content {
+	grid-area: content;
+}
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 40px;
+	max-width: 40px;
+	padding: 4px;
+}
+
+.sideBarItem img{
+	max-height: 40px;
+	max-Width:40px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:inline-flex;
+	flex-direction: column;
+	flex-flow: wrap;
+    padding-bottom: 50px;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 80px;
+	height: 40px;
+	max-height: 30px;
+	max-width: 30px;
+	margin: 5px;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #fff;
+		color: #444;
+	}
+.box {
+  background-color: #319cb4;
+  color: white;
+  font-family: monospace;
+  font-size: 170%;
+}
+
+.header {
+  background-color: #5fbed3;
+}
+
+#clearButton{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+#saveImageButton {
+    font-family: monospace;
+    font-size: 15px;
+}

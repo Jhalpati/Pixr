@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/jquery-3.2.1.slim.min.js"
+            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+
+    <!-- Main sketch file -->
+    <script src="sketch.js"></script>
+    
+    <!-- Add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+    
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="rectangleTool.js"></script>
+    <script src="eraserTool.js"></script>
+    <script src="circletool.js"></script>
+    <script src="triangleTool.js"></script>
+    <script src="brushTool.js"></script>
+    <script src="startrial.js"></script>
+    <script src="rainbowtool.js"></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header">Pixr Drawing App
+        <button id="clearButton">Clear</button>
+        <select id="format">
+            <option value="png">PNG</option>
+            <option value="jpg">JPG</option>
+            <option value="bmp">BMP</option>
+            <option value="tiff">TIFF</option>
+            <option value="gif">GIF</option>
+        </select>
+        <button id="saveImageButton">Save Image</button>
+      </div>
+      <div class="box sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette"></div>
+      <div class="box options"></div>
+	</div>
+  </body>
+</html>
